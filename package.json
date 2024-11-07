@@ -11,10 +11,6 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "14": "^3.1.6",
-    "nodejs": "^0.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
@@ -24,5 +20,8 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "ts-jest": "^29.2.5"
+  },
+  "engines": {
+    "node": "14.21.3"
   }
 }
