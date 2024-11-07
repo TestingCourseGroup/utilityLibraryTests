@@ -42,5 +42,6 @@ jobs:
           path-to-lcov: ./coverage/lcov.info
           parallel: true
           flag-name: Node.js ${{ matrix.node-version }}
+          
     - name: Complete Coveralls parallel job
-      run: coveralls done --build-number ${{ github.run_id }}
+      run: coveralls done --build-number ${{ github.run_id }} -r ${{ secrets.COVERALLS_REPO_TOKEN }}
