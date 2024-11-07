@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "coverage": "jest --coverage",
+    "coverage": "npx jest --coverage",
     "test-coverage": "nyc --reporter=text-lcov npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
