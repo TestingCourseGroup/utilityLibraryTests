@@ -15,5 +15,6 @@ export default {
   ],
   testMatch: [
     '**/test/**/*.test.[jt]s?(x)', // Adjust the pattern to match your test folder and file naming
-  ]
+  ],
+  coverageReporters: ['lcov', 'text'], // Generates lcov report and displays text summary in the console
 };
