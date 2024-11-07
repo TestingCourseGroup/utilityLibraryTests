@@ -32,9 +32,13 @@ jobs:
     - name: Run tests
       run: npm test
 
+    - name: Run tests with coverage
+      run: npm run coverage
+
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.3.4
       with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./coverage/lcov.info
           parallel: true
-          flag-name: ${{ matrix.node-version }}
+          flag-name: Node.js ${{ matrix.node-version }}
