@@ -1,7 +1,7 @@
 # Student template
 
 ## Purpose of this repository
-
+TEST LINE
 This is a project template for students participating in Software Testing course
 at Tampere University.
 
