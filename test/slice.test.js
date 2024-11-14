@@ -60,4 +60,30 @@ describe('Tests for slice.js', () => {
   test('should handle negative end greater than array length', () => {
     expect(slice(array, 0, -10)).toEqual([]);
   });
+
+  test('should return slice of array when start is null', () => {
+    // start is null, so it should default to 0
+    expect(slice(array, null, 3)).toEqual([1, 2, 3]);
+  });
+
+  test('should return slice of array when start is undefined', () => {
+    // start is undefined, so it should default to 0
+    expect(slice(array, undefined, 3)).toEqual([1, 2, 3]);
+  });
+
+  test('should return slice of array when start is a valid number', () => {
+    expect(slice(array, 2)).toEqual([3, 4]);
+  });
+
+  test('should return slice with negative start value', () => {
+    expect(slice(array, -2)).toEqual([3, 4]);
+  });
+
+  test('should return slice when start is greater than end', () => {
+    expect(slice(array, 3, 1)).toEqual([]);
+  });
+
+  test('should handle start and end values beyond array length', () => {
+    expect(slice(array, 5, 10)).toEqual([]);
+  });
 });
