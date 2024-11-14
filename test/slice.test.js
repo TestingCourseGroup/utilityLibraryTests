@@ -1,6 +1,6 @@
 import slice from '../src/slice';
 
-describe('slice', () => {
+describe('Tests for slice.js', () => {
   const array = [1, 2, 3, 4]; // Test array
 
   test('should return a slice of the array from start to end', () => {
