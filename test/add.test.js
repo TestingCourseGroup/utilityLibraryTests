@@ -1,6 +1,6 @@
 import add from '../src/add';  // Adjust the path to where your add.js is located
 
-describe('add function', () => {
+describe('Tests for add.js', () => {
   it('correctly adds two positive numbers', () => {
     expect(add(6, 4)).toBe(10);  // 6 + 4 should equal 10
   });
