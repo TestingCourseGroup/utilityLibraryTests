@@ -1,6 +1,6 @@
 import upperFirst from '../src/upperFirst';
 
-describe('upperFirst', () => {
+describe('Tests for upperFirst.js', () => {
   test('should convert the first character to upper case', () => {
     expect(upperFirst('fred')).toBe('Fred');
   });
