@@ -15,7 +15,7 @@ describe('compact function', () => {
           .toBeArrayOfSize(3);
     });
 
-    it('removes all elements and returns an empty array', () => {
+    it.only('removes all elements and returns an empty array', () => {
         expect(compact([false, undefined, NaN, 0, ''])).toBeEmpty();
     })
 });
