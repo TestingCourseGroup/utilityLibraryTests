@@ -3,7 +3,7 @@
 export default {
   testEnvironment: 'jest-environment-jsdom',
   roots: ['<rootDir>/src', '<rootDir>/test'],
-  setupFilesAfterEnv: ['@testing-library/jest-dom'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom', 'jest-extended/all'],
   transform: {
     '^.+\\.jsx?$': 'babel-jest', // For JavaScript (with Babel)
     '^.+\\.tsx?$': 'ts-jest',     // For TypeScript (if applicable)
