@@ -8,23 +8,23 @@ describe('Tests for slice.js', () => {
   });
 
   test('should return the entire array if start is 0 and end is array length', () => {
-    expect(slice(array, 0, array.length)).toEqual([1, 2, 3, 4]);
+    expect(slice(array, 0, array.length)).toBeArray([1, 2, 3, 4]);
   });
 
   test('should return an empty array if start equals end', () => {
-    expect(slice(array, 2, 2)).toEqual([]);
+    expect(slice(array, 2, 2)).toBeEmpty();
   });
 
   test('should return the rest of the array if only start is provided', () => {
-    expect(slice(array, 2)).toEqual([3, 4]);
+    expect(slice(array, 2)).toBeArray([3, 4]);
   });
 
   test('should work with negative start index', () => {
-    expect(slice(array, -2)).toEqual([3, 4]);
+    expect(slice(array, -2)).toBeArray([3, 4]);
   });
 
   test('should work with negative end index', () => {
-    expect(slice(array, 1, -1)).toEqual([2, 3]);
+    expect(slice(array, 1, -1)).toBeArray([2, 3]);
   });
 
   test('should return an empty array if start is out of bounds', () => {
