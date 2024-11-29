@@ -36,5 +36,10 @@ describe('Tests for words function', () => {
     it('should split after two uppercase letters', () => {
         expect(words("TESt")).toEqual(["TE", "St"]);
     });
+    
+    it('should return an empty array when custom pattern matches nothing', () => {
+        // Custom pattern that doesn't match anything in the input string
+        expect(words("Hello, world!", /\d+/g)).toBeArray().toEqual([]);
+    });
 
 });
