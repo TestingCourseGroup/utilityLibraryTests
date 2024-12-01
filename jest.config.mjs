@@ -1,5 +1,4 @@
 // jest.config.mjs
-// HEllo
 export default {
   testEnvironment: 'jest-environment-jsdom',
   roots: ['<rootDir>/src', '<rootDir>/test'],
@@ -11,7 +10,7 @@ export default {
   moduleFileExtensions: ['js', 'mjs', 'cjs', 'jsx', 'ts', 'tsx', 'json', 'node'],
   coverageDirectory: 'coverage',
   collectCoverageFrom: [
-    'src/**/*.{js,jsx,ts,tsx}',
+    'src/*.{js,jsx,ts,tsx}',
     '!src/**/*.d.ts',
   ],
   testMatch: [
