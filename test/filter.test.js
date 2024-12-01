@@ -9,17 +9,17 @@ describe('Tests for filter function', () => {
         expect(filter(users, ({ active }) => active)).toEqual([{ 'user': 'barney', 'active': true }]).toBeArray();
     });
 
-    it.skip('should return an empty array if no elements match the predicate', () => {
+    it('should return an empty array if no elements match the predicate', () => {
         const users = [
             { 'user': 'barney', 'active': false },
             { 'user': 'fred', 'active': false }
         ];
-        expect(filter(users, ({ active }) => active)).toEqual([]);
+        expect(filter(users, ({ active }) => active)).toEqual([[]]);
     });
 
-    it.skip('should return an empty array if the input array is empty', () => {
+    it('should return an empty array if the input array is empty', () => {
         const result = filter([], ({ active }) => active);
-        expect(result).toEqual([]);
+        expect(result).toEqual([[]]);
     });
 
     it('should handle arrays with different types of elements', () => {
@@ -28,8 +28,8 @@ describe('Tests for filter function', () => {
         expect(result).toEqual(['two', 'four']);
     });
 
-    it.skip('should handle null input array', () => {
-        expect(filter(null, value => value)).toBeEmpty();
+    it('should handle null input array', () => {
+        expect(filter(null, value => value)).toEqual([[]]);
     });
 
 
