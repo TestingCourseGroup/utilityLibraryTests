@@ -5,9 +5,10 @@ This is the project for the assignment in Software Testing course
 at Tampere University by Lauri Pollari and Minja Survonen.
 
 ## Contains
+Original repository: https://github.com/otula/COMP.SE.200-2024-2025-1
 The original repository only contains the source code that is under testing, `package.json` skeleton
 and LICENSE file. In this repository there is also a test folder containing all the tests made for 10 files (including add, 
-ceil, compact, countBy, filter, get, reduce, slice, upperfirst and words) and the configuration files for the tool used and Github Actions.
+ceil, compact, countBy, filter, get, reduce, slice, upperfirst and words) and the configuration files for the tools used and Github Actions.
 
 Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
 Removing this license file directly violates terms and conditions of the software under testing.
